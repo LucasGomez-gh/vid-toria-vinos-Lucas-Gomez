@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/Iconos/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Vid Toria</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a class="nav__icono" href="#">
+                <img class="nav__icono--orden" src="../assets/Imagenes/Vid Toria Logo.png" alt="logo">
+            </a>
+            <ul class="nav__ul">
+                <li class="navegacion__link"><a class="nav__enlace" href="../index.html">Inicio</a></li>
+                <li class="navegacion__link"><a class="nav__enlace" href="../pages/vino-tinto.html">Vino tinto</a></li>
+                <li class="navegacion__link"><a class="nav__enlace" href="../pages/vino-blanco.html">Vino Blanco</a></li>
+                <li class="navegacion__link"><a class="nav__enlace" href="../pages/nosotros.html">Nosotros</a></li>
+                <li class="navegacion__link"><a class="nav__enlace" href="#"> Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="formulario">
+        <div class="formulario__contacto">
+            <form action="procesar.php" name="Contacto" method="post">
+                    <legend class="Datos">Dejanos tus datos</legend>
+                    <p class="p">
+                    <label class="Datos">Nombre
+                        <input type="text" name="Nombre" placeholder="Nombre" required>
+                    </label>
+                    </p>
+                    <p class="p">
+                    <label class="Datos">Apellido
+                        <input type="text" name="Apellido" placeholder="Apellido" required>
+                    </label>
+                    </p>
+                    <p class="p">
+                    <label class="Datos">Email
+                        <input type="text" name="Email" placeholder="Ejemplo@gmail.com" required>
+                    </label>
+                    </p>
+                    <p class="p">
+                    <label class="Datos">teléfono
+                        <input type="tel" name="teléfono" placeholder="+542604126436" required>
+                    </label>
+                    </p>
+                    <h4 class="Datos">Asunto</h4>
+                    <select name="Asunto">
+                        <option value="Compras mayorista">Compras mayorista</option>
+                        <option value="Consultas">Consultas</option>
+                        <option value="otro">otro</option>
+                    </select>
+                    <h4 class="Datos">Comentario</h4>
+                    <textarea name="comentario"cols="45" rows="10"></textarea>
+                    <p class="p">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">borrar</button>
+                    </p>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <article class="footer__article">
+            <h4 class="footer__titulo">Ayuda</h4>
+            <p class="footer__opciones">como comprar</p>
+            <p class="footer__opciones">compras mayoristas</p>
+            <p class="footer__opciones">Metodos de pago</p>
+            <p class="footer__opciones">Arrepentimiento</p>
+        </article>
+        <article class="footer__article">
+            <h4 class="footer__titulo">Seguinos en nuestras redes</h4>
+        </article>
+        <article class="footer__article">
+            <h4 class="footer__titulo">Contactanos</h4>
+            <p class="footer__opciones">vinosvidtoria@gmail.com</p>
+            <p class="footer__opciones">+542604614823</p>
+        </article>
+    </footer>
+</body>
+</html>
