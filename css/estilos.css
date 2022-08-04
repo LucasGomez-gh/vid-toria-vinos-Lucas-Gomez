@@ -13,18 +13,22 @@
 }
 /*Index personalizacion*/
 /*barra de navegacion*/
-header{
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
 
 
     background-color: black;
     height: 100px;
-    width: 100%;
-}
+    width: 100%; */
 .header{
     top: 0%;
     left: 0%;
+}
+.container-fluid{
+  background-color: black;
+}
+.navbar{
+  background-color: black;
 }
 .nav{
     display: flex;
