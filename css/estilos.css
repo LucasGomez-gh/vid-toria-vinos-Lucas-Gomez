@@ -13,26 +13,11 @@
 }
 /*Index personalizacion*/
 /*barra de navegacion*/
-    /* display: flex;
-    flex-wrap: wrap;
-
-
-    background-color: black;
-    height: 100px;
-    width: 100%; */
-.header{
-    top: 0%;
-    left: 0%;
-}
 .container-fluid{
   background-color: black;
 }
 .navbar{
   background-color: black;
-}
-.nav{
-    display: flex;
-    margin-left: 65px;
 }
 .nav__icono{
     align-items: flex-start;
@@ -49,11 +34,11 @@
     font-family: 'Philosopher', sans-serif;
     list-style: none;
 }
-.navegacion__link{
-    padding: 3px 3px;
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 3px 10px;
     border-radius: 10px;
 }
-.nav__enlace{
+.navbar-expand-lg .navbar-nav .nav-link{
     text-decoration: none;
     color: rgb(159 26 39);
     font-family: 'Philosopher', sans-serif;
@@ -67,9 +52,12 @@
     font-size: 20px;
     margin: 15px;
 }
-.navegacion__link:hover{
+.navbar-expand-lg .navbar-nav .nav-link:hover{
     background-color: #4b4b4b;
     transition: 1s;
+}
+.navbar-toggler{
+  background-color: rgb(159 26 39);
 }
 /*Main personalizacion*/
 
@@ -489,7 +477,10 @@
 .footer__opciones{
     padding: 10px;
 }
-
+i{
+  font-size: 2rem;
+  margin: 20px 40px;
+}
 
 
 /*modificacion page "nosotros"*/
