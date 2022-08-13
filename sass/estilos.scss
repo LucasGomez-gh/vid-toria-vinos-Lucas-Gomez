@@ -6,6 +6,10 @@
 @import url('https://fonts.googleapis.com/css2? family= Roboto+Slab:wght@700 & display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto+Slab:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=PT+Sans:ital@1&display=swap');
+
+$colorprincipal: black;
+$colorsecundario: #9f1a27;
+$colorbeige: #ead697;
 *{
     margin: 0%;
     padding: 0%;
@@ -14,10 +18,10 @@
 /*Index personalizacion*/
 /*barra de navegacion*/
 .container-fluid{
-  background-color: black;
+  background-color: $colorprincipal;
 }
 .navbar{
-  background-color: black;
+  background-color: $colorprincipal;
 }
 .nav__icono{
     align-items: flex-start;
@@ -38,14 +42,14 @@
 }
 .navbar-expand-lg .navbar-nav .nav-link{
     text-decoration: none;
-    color: #9f1a27;
+    color: $colorsecundario;
     font-family: 'Philosopher', sans-serif;
-    font-size: 20px;
-    margin: 15px;
+    font-size: 15px;
+    margin: 20px;
 }
 .nav__enlace--blanco{
     text-decoration: none;
-    color: #ead697;
+    color: $colorbeige;
     font-family: 'Philosopher', sans-serif;
     font-size: 20px;
     margin: 15px;
@@ -55,7 +59,7 @@
     transition: 1s;
 }
 .navbar-toggler{
-  background-color: #9f1a27;
+  background-color: $colorsecundario;
 }
 /*Main personalizacion*/
 .main{
@@ -88,9 +92,9 @@
     font-family: 'Merriweather', serif;
     font-size: 50px;
     border: solid 5px;
-    border-color: black;
+    border-color: $colorprincipal;
     border-radius: 5px;
-    background-color: #9f1a27;
+    background-color: $colorsecundario;
     margin: 10px 10px 60px 10px;
     padding: 5px;
 }
@@ -101,9 +105,9 @@
     font-family: 'Merriweather', serif;
     font-size: 50px;
     border: solid 5px;
-    border-color: black;
+    border-color: $colorprincipal;
     border-radius: 5px;
-    background-color: #ead697;
+    background-color: $colorbeige;
     margin: 10px 10px 60px 10px;
     padding: 5px;
 }
@@ -410,7 +414,7 @@
     background: #bd2df5;
   }
 .contenido__boton:hover{
-    background-color: #9f1a27;
+    background-color: $colorsecundario;
     transition: 1s;
 }
 .divisor{
@@ -424,14 +428,14 @@
     grid-template-rows: repeat(1, 1fr);
     background-color: black;
     margin: 200px 0px 0px 0px;
-}
-.footer__article{
-    color: #9f1a27;
-    font-family: 'Philosopher', sans-serif;
-    padding: 10px;
+    .footer__article{
+      color: $colorsecundario;
+      font-family: 'Philosopher', sans-serif;
+      padding: 10px;
+  }
 }
 .footer__article--blanco{
-    color: #ead697;
+    color: $colorbeige;
     font-family: 'Philosopher', sans-serif;
     padding: 10px;
 }
@@ -467,13 +471,13 @@ i{
 }
 .formulario{
     margin: 100px 20px 20px 20px;
-    box-shadow: 0 0 50px 0 #9f1a27;
+    box-shadow: 0 0 50px 0 $colorsecundario;
 }
 .formulario > *{
     padding: 1rem;;
 }
 .formulario__contacto{
-    background: black;
+    background: rgb(2,0,36);
     background: linear-gradient(117deg, rgba(2,0,36,1) 0%, rgba(159,26,39,1) 0%, rgba(159,26,39,1) 100%);   
 }
 .formulario__contacto form{
@@ -493,6 +497,7 @@ p button{
     margin: 10px;
     padding: 5px;
 }
+
 @media only screen and (max-width: 768px){
     .titulo{
         margin: 10px;
