@@ -6,6 +6,8 @@
 @import url('https://fonts.googleapis.com/css2? family= Roboto+Slab:wght@700 & display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto+Slab:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=PT+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+HK&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+HK&family=Raleway:wght@300&display=swap');
 
 $colorprincipal: black;
 $colorsecundario: #9f1a27;
@@ -54,10 +56,6 @@ $fuente: (
     font-family: 'Philosopher', sans-serif;
     font-size: map-get($fuente , minima);
     margin: 15px;
-}
-.nav__enlace--blanco{
-  @extend .navbar-expand-lg;
-    color: $colorbeige;
 }
 .navbar-expand-lg .navbar-nav .nav-link:hover{
     background-color: #4b4b4b;
@@ -427,6 +425,18 @@ $fuente: (
       padding: 10px;
   }
 }
+#nosotros{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  background-color: black;
+  margin: 0px 0px 0px 0px;
+  .footer__article{
+    color: $colorsecundario;
+    font-family: 'Philosopher', sans-serif;
+    padding: 10px;
+}
+}
 .footer__article--blanco{
     color: $colorbeige;
     font-family: 'Philosopher', sans-serif;
@@ -447,20 +457,59 @@ i{
 /*modificacion page "nosotros"*/
 .main__nosotros{
     display: flex;
+    font-family: 'Noto Serif HK', serif;
+}
+.sect1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: url(../assets/Imagenes/nosotros.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Philosopher', serif;
+}
+.secth2{
+  display: flex;
+  justify-content: center;
+  color: #feab3a;
+  height: 75px;
+  font-size: 60px;
+  border-radius: 20px;
+  padding: 0px 20px;
+}
+.sect2{
+  display: flex;
+  justify-content: center;
+  padding: 30px 50px;
+  background-color: black;
+  font-size: 20px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+.sect3{
+  @extend .sect1;
+  background-image: url(../assets/Imagenes/bodega-iaccarini-desde.jpg);
+  
+}
+.sect4{
+  display: flex;
+  justify-content: center;
+  background-color: #f1f3f4;
 }
 .presentacion{
     justify-content: center;
     align-items: center;
 }
 .presentacion__h1{
-    font-family: 'Philosopher', sans-serif;
     font-size: 40px;
     text-decoration-line: underline;
     padding: 10px;
     margin-right: 20px;
 }
 .presentacion__p{
-    font-family: 'Mukta', sans-serif;
     font-size: 25px;
 }
 .formulario{
