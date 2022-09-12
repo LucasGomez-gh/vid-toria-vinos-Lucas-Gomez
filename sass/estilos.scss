@@ -541,15 +541,18 @@ p button{
       flex-wrap: wrap;
       margin: 0px;
   }
+  .contenido__vino-1{
+    width: 40%;
+  }
   .formulario__contacto{
       width: 75%;
   }
   .formulario{
-      box-shadow: none;
-  }
-  textarea{
-      width: fit-content;
-  }
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   .secth2{
     font-size: 40px;
   }
@@ -562,8 +565,14 @@ p button{
       flex-wrap: wrap;
       margin: 0px;
   }
+  .contenido__vino-1{
+    width: 40%;
+  }
   .formulario{
       box-shadow: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
   .main__imagen{
   height: 450px;
